@@ -1,9 +1,9 @@
-import Posts from "./Posts";
+import Students from "./Students";
 
 const App = () => {
   return (
     <>
-      <Posts />
+      <Students />
     </>
   );
 };
