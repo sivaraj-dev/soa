@@ -1,5 +1,11 @@
+import Posts from "./Posts";
+
 const App = () => {
-  return <></>;
+  return (
+    <>
+      <Posts />
+    </>
+  );
 };
 
 export default App;
