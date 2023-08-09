@@ -1,11 +1,21 @@
 const Posts = () => {
+  const posts = [
+    "Post 1",
+    "Post 2",
+    "Post 3",
+    "Post 4",
+    "Post 5",
+    "Post 6",
+    "Post 7",
+  ];
+
   return (
     <>
-      <ul>
-        <li>Post 1</li>
-        <li>Post 2</li>
-        <li>Post 3</li>
-      </ul>
+      <ol>
+        {posts.map((post, index) => {
+          return <li key={index}>{post}</li>;
+        })}
+      </ol>
     </>
   );
 };
