@@ -1,20 +1,26 @@
 import { useState } from "react";
 import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0);
+import Login from "./auth/login";
 
-  const onButtonClick = () => {
-    setCount((count) => count + 1);
-  };
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <h1>Home</h1>,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+]);
+
+const App = () => {
   return (
     <>
-      {/* <button onClick={() => setCount((count) => count + 1)}> */}
-      <button onClick={onButtonClick}>
-        count is {count}
-      </button>
+      <RouterProvider router={router} />
     </>
   );
-}
+};
 
 export default App;
