@@ -1,5 +1,6 @@
 from flask import Flask
 from markupsafe import escape
+from flask import request
 
 app = Flask(__name__)
 
@@ -48,15 +49,19 @@ def postSave():
 def login():
     print("Check Login")
 
+    print("request.method", request.method)
+
     return {
         "status": 1,
         "cls": "success",
         "msg": "Login Successfully",
-        "payload": {},
+        "payload": {
+            "method": request.method,
+        },
     }
 
 
-'''
+"""
 ## Dynamic Path Parameter
 ## Dynamic Route
 
@@ -64,7 +69,8 @@ https://www.amazon.in/  Fire-Boltt-Bluetooth-Calling-Assistance-Resolution  /dp/
 https://www.amazon.in/  Noise-Launched-Bluetooth-Calling-Tracking           /dp/    B0BJ72WZQ7  /   ref=sr_1_3
 
 /<categoryName>/dp/<categoryId>/<refId>
-'''
+"""
+
 
 @app.route("/random/<name>")
 def hello(name):
