@@ -29,3 +29,15 @@ def posts():
         "msg": "Success",
         "payload": posts,
     }
+
+
+@app.route("/post/save", methods=["GET", "POST"])
+def postSave():
+    print("Saving post...")
+
+    return {
+        "status": 1,
+        "cls": "success",
+        "msg": "Updated Successfully",
+        "payload": {},
+    }

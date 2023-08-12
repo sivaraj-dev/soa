@@ -6,3 +6,6 @@ GET {{host}}/
 
 ###
 GET {{host}}/posts
+
+###
+GET {{host}}/post/save
