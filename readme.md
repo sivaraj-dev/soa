@@ -69,3 +69,15 @@ def posts():
 - In `posts() or posts = () => or posts():`, here `posts` is the Name of the function
 - react/js => block represented by `{}` or `()`
 - python => block represented by `indentation`
+
+### React
+
+1. using vite to create a react project
+    ```bash
+    npm create vite@latest web -- --template react
+    ```
+2. After successful creation moved all the files to main `web`` folder.
+3. `npm install`
+4. `npm run dev`
+
+
