@@ -23,3 +23,26 @@
     pip install flask
     pip freeze > requirements.txt
     ```
+5. Run a flask project.
+    ```bash
+    flask --app hello run
+    ```
+    hello => name of the file
+    if we're keeping the `app.py` as the name of the file then we don't need to specify the name of the file.
+6. We've changed the function name, return data type and sample data also changed
+    ```python
+    from flask import Flask
+
+    app = Flask(__name__)
+
+    @app.route("/")
+    def home():
+        return {
+            "status": 0,
+            "cls": "error",
+            "msg": "Access Denied",
+            "payload": {},
+        }
+    ```
+7. Installed `Rest Client` & `Project Manager` extension in VS Code
+8. 
