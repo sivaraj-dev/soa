@@ -45,4 +45,27 @@
         }
     ```
 7. Installed `Rest Client` & `Project Manager` extension in VS Code
-8. 
+
+
+#### React/Javascript Functions
+```js
+// Normal Functions
+function posts(){
+    return {}
+}
+
+// Arrow Functions
+const posts = () => {
+    return {}
+}
+```
+
+#### Python Functions
+```python
+def posts():
+    return {}
+```
+
+- In `posts() or posts = () => or posts():`, here `posts` is the Name of the function
+- react/js => block represented by `{}` or `()`
+- python => block represented by `indentation`
