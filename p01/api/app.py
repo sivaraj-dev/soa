@@ -41,3 +41,15 @@ def postSave():
         "msg": "Updated Successfully",
         "payload": {},
     }
+
+@app.route("/auth/login", methods=["POST"])
+def login():
+    print("Check Login")
+
+    return {
+        "status": 1,
+        "cls": "success",
+        "msg": "Login Successfully",
+        "payload": {},
+    }
+

@@ -9,3 +9,12 @@ GET {{host}}/posts
 
 ###
 GET {{host}}/post/save
+
+
+###
+POST {{host}}/auth/login
+
+{
+    "username": "sampleusername",
+    "password": "pws"
+}
