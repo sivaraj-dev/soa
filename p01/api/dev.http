@@ -1,0 +1,33 @@
+
+@host=http://127.0.0.1:5000
+
+GET {{host}}/
+
+
+###
+GET {{host}}/posts
+
+###
+GET {{host}}/post/save
+
+
+###
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+    "username": "sampleusername",
+    "password": "pwd"
+}
+
+
+###
+GET {{host}}/random/Sample Name
+
+
+###
+GET {{host}}/Fire-Boltt-Bluetooth-Calling-Assistance-Resolution/dp/B0BF57RN3K/ref=sr_1_1
+
+
+### 
+GET {{host}}/Noise-Launched-Bluetooth-Calling-Tracking/dp/B0BJ72WZQ7/ref=sr_1_3
