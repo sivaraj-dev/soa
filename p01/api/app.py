@@ -49,7 +49,21 @@ def postSave():
 def login():
     print("Check Login")
 
-    print("request.method", request.method)
+    # print("request.method", request.method)
+    # print("request.form", request.form)
+    # print("request.args", request.args)
+    # print("request.json", request.json)
+    # print("request.data", request.data)
+    # print("request.files", request.files)
+    # print("request.values", request.values)
+    
+    input = request.json
+    
+    username = input["username"]
+    print('username: ', username)
+    password = input["password"]
+    print('password: ', password)
+    
 
     return {
         "status": 1,

@@ -13,10 +13,11 @@ GET {{host}}/post/save
 
 ###
 POST {{host}}/auth/login
+Content-Type: application/json
 
 {
     "username": "sampleusername",
-    "password": "pws"
+    "password": "pwd"
 }
 
 
