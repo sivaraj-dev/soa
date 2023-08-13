@@ -12,3 +12,5 @@ p02/api/__pycache__/
 p02/web/node_modules
 p02/web/node_modules/
 p01/api/.venv/
+p02/api/.venv/lib/python3.8/site-packages/__pycache__
+p02/api/.venv

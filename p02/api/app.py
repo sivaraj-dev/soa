@@ -1,13 +1,20 @@
 from flask import Flask, request
 from flask_cors import CORS, cross_origin
 import random
+from pymongo import MongoClient
 
 app = Flask(__name__)
 cors = CORS(app)
 
+client = MongoClient("mongodb://localhost:27017/")
+mdb = client.m01
+
 
 @app.route("/")
 def home():
+    for item in mdb.users.find({}):
+        print(item)
+
     return {
         "status": 1,
         "cls": "success",
@@ -18,10 +25,10 @@ def home():
 
 @app.route("/todo/list")
 def todoList():
-    items = [
-        {"_id": 1, "content": "Todo 1"},
-        {"_id": 2, "content": "Todo 2"},
-    ]
+    items = []
+    for item in mdb.todos.find({}):
+        items.append(item)
+
     return {
         "status": 1,
         "cls": "success",
@@ -40,9 +47,11 @@ def todoSave(todoId):
 
     item = request.json
 
-    if item["_id"] == "new":
-        item["_id"] = random.randint(100, 9999)
+    # if item["_id"] == "new":
+    #     item["_id"] = random.randint(100, 9999)
 
+    mdb.todos.insert_one(item)
+    
     return {
         "status": 1,
         "cls": "success",
