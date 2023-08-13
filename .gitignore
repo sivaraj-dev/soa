@@ -1,3 +1,14 @@
 r03/node_modules
 p01/.venv
+p01/.venv/
 p01/api/__pycache__
+p01/api/__pycache__/
+p01/web/node_modules
+p01/web/node_modules/
+p02/.venv
+p02/.venv/
+p02/api/__pycache__
+p02/api/__pycache__/
+p02/web/node_modules
+p02/web/node_modules/
+p01/api/.venv/
