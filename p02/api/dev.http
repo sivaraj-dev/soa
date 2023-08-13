@@ -10,4 +10,9 @@ GET {{host}}/todo/list
 
 ###
 POST {{host}}/todo/save/1
+Content-Type: application/json
 
+{
+    "_id": 1,
+    "content": "Sample content 1"
+}
