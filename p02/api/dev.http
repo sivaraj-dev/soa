@@ -9,10 +9,10 @@ GET {{host}}/todo/list
 
 
 ###
-POST {{host}}/todo/save/1
+POST {{host}}/todo/save/3
 Content-Type: application/json
 
 {
-    "_id": 1,
-    "content": "Sample content 1"
+    "_id": 3,
+    "content": "Sample content 3"
 }
