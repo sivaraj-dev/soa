@@ -6,3 +6,9 @@ GET {{host}}/
 
 ###
 POST {{host}}/auth
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "pwd1"
+}
