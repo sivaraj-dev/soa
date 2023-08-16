@@ -1,15 +1,31 @@
 from flask import Flask
+from pymongo import MongoClient
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def home():
+    client = MongoClient("mongodb://localhost:27017/")
+    mdb = client.m04
+
+    selection = {
+        "age": {
+            "$gt": 20,
+        },
+    }
+
+    users = []
+    for user in mdb.users.find(selection):
+        users.append(user)
+
     return {
         "status": 1,
         "cls": "success",
         "msg": "Home Route Success",
-        "payload": {},
+        "payload": {
+            "users": users,
+        },
     }
 
 
