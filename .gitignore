@@ -22,3 +22,11 @@ p03/web/node_modules
 p03/web/node_modules/
 p03/api/.venv/lib/python3.8/site-packages/__pycache__
 p03/api/.venv
+p04/.venv
+p04/.venv/
+p04/api/__pycache__
+p04/api/__pycache__/
+p04/web/node_modules
+p04/web/node_modules/
+p04/api/.venv/lib/python3.8/site-packages/__pycache__
+p04/api/.venv
